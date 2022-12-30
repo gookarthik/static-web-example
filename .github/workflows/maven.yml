@@ -25,5 +25,12 @@ jobs:
           touch dummy.txt
           ls -la
           scp dummy.txt Administrator@34.220.58.194:dummy.txt
-
-    
+    - name: Copy folder content recursively to remote
+      uses: garygrossgarten/github-action-scp@release
+      with:
+        local: dummy.txt
+        remote: dummy.txt
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.SSH_USER }}
+        password: ${{ secrets.PASSWORD }}      
+        port: ${{ secrets.PORT }}
