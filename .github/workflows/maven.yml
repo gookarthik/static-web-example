@@ -24,5 +24,6 @@ jobs:
       run: |
           touch dummy.txt
           ls
+          scp dummy.txt Administrator@34.220.58.194:C:\test
 
     
