@@ -30,6 +30,5 @@ jobs:
       with:
         server: ${{ secrets.HOST }}
         username: Administrator
-        password: ${{ secrets.PASSWORD }}    
-        protocol: ftps
-        port: 3389
+        password: ${{ secrets.PASSWORD }} 
+        dry-run: true
