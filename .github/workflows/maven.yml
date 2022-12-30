@@ -24,7 +24,7 @@ jobs:
       run: |
           touch dummy.txt
           ls -la
-          sshpass -p "?=GnEEz$7VDwuCYlTs$x4*a((rC&MiF." scp -P 3389 dummy.txt Administrator@35.91.244.188:dummy.txt
+          
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
